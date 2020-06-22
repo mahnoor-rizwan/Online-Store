@@ -10,7 +10,7 @@ void main() {
     ),
     initialRoute: '/home',
     routes: {
-      '/':(context)=> Loading(),
+      //'/':(context)=> Loading(),
       '/home':(context)=> Home(),
       '/product':(context)=> Product(),
 

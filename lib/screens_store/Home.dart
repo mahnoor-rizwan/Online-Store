@@ -27,54 +27,42 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      body: SafeArea(
-          child: Column(
-            children: <Widget>[
-              Align(
-                alignment: Alignment.topLeft,
-                child: FlatButton.icon(
-                  onPressed: (){
-                  },
-                  icon: Icon(Icons.dehaze, color: Colors.amber,size: 30,),
-                  label: Text('    ',
-                  style: TextStyle(fontSize: 20, color: Colors.amber),
+      appBar: AppBar(
+        elevation: 1.0,
+        backgroundColor: Colors.white,
+        title: Icon(Icons.dehaze, color: Colors.amber,size: 30,),
+      ),
+      body: ListView.builder(
+        scrollDirection: Axis.vertical,
+        itemCount: listOfClothes.length,
+        itemBuilder: (context, index) {
+          return InkWell(
+            child: Container(
+              width: 100,
+              color: Colors.white,
+              child: Padding(
+                padding: const EdgeInsets.only(bottom: 15.0, top: 20),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Image.asset(
+                    listOfClothes[index].imageURL,
+                  height:350,
+                  //fit: BoxFit.contain,
                   ),
                 ),
               ),
-              Expanded(
-                child: ListView.builder(
-                  scrollDirection: Axis.vertical,
-                  itemCount: listOfClothes.length,
-                  itemBuilder: (context, index) {
-                    return InkWell(
-                      child: LimitedBox(
-                        maxWidth: 350,
-                        maxHeight: 350,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(20),
-                          child: Image.asset(
-                            listOfClothes[index].imageURL,
-                          height:350,
-                          fit: BoxFit.contain,
-                          //width: 200,
-                          ),
-                        ),
-                      ),
-                      onTap: (){
-                        DataTransfer dataTransfer= new DataTransfer(dataURL: listOfClothes[index].imageURL,dataPrice: listOfClothes[index].Price,dataType: listOfClothes[index].type);
-                        //print('tapped on container-- ${listOfClothes[index].Price}');
-                        Navigator.pushNamed(
-                            context,
-                            '/product',
-                          arguments: dataTransfer,
-                        );
-                      },
-                    );
-                  },
-                ),
-              ),
-            ],
-          ),
+            ),
+            onTap: (){
+              DataTransfer dataTransfer= new DataTransfer(dataURL: listOfClothes[index].imageURL,dataPrice: listOfClothes[index].Price,dataType: listOfClothes[index].type);
+              //print('tapped on container-- ${listOfClothes[index].Price}');
+              Navigator.pushNamed(
+                  context,
+                  '/product',
+                arguments: dataTransfer,
+              );
+            },
+          );
+        },
       ),
     );
   }
