@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:onlinestore/imageDetails.dart';
+import 'package:onlinestore/screens_store/Home.dart';
+
 
 class Product extends StatefulWidget {
   @override
@@ -7,8 +10,12 @@ class Product extends StatefulWidget {
 }
 
 class _ProductState extends State<Product> {
+DataTransfer dataTransfer;
+
   @override
   Widget build(BuildContext context) {
+  RouteSettings settings = ModalRoute.of(context).settings;
+  dataTransfer =settings.arguments;
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -26,45 +33,69 @@ class _ProductState extends State<Product> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text('Sweater', style: TextStyle(color: Colors.grey[600], fontSize: 20, fontWeight: FontWeight.w400, )),
-            SizedBox(height: 15.0,),
+            Text('Sweater', style: TextStyle(color: Colors.grey[600], fontSize: 18, fontWeight: FontWeight.w400, )),
+            SizedBox(height: 5.0,),
             Center(
-              child: Image.asset(
-                  'assets/yellow-yellow-sweater.jpg',
-              //height: 400,
-              //fit: BoxFit.scaleDown,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Image.asset(
+                  dataTransfer.dataURL,
+                  //'assets/yellow-yellow-sweater.jpg',
+                  height:320,
+                  fit: BoxFit.fitWidth,
+                ),
               ),
             ),
-            SizedBox(height: 15.0,),
+            SizedBox(height: 10.0,),
+            Text('${dataTransfer.dataPrice}', style: TextStyle(color: Colors.grey[500], fontSize: 15)),
+            SizedBox(height: 5.0,),
             Text('colors', style: TextStyle(color: Colors.grey[500], fontSize: 15)),
             SizedBox(height: 5.0,),
             Row(
               children: <Widget>[
                 Container(
-                  child: Text('    '),
-                  color: Colors.amberAccent,
+                  height: 20,
+                  width: 20,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
+                    color: Colors.amberAccent,
+                  ),
                 ),
-                SizedBox(width: 10.0,),
+                SizedBox(width: 15.0,),
                 Container(
-                  child: Text('    '),
-                  color: Colors.deepOrange,
+                  height: 20,
+                  width: 20,
+                  decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(5),
+                    color: Colors.deepOrange,
                 ),
-                SizedBox(width: 10.0,),
+                ),
+                SizedBox(width: 15.0,),
                 Container(
-                  child: Text('    '),
+                  height: 20,
+                  width: 20,decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(5),
                   color: Colors.blue,
                 ),
-                SizedBox(width: 10.0,),
+                ),
+                SizedBox(width: 15.0,),
                 Container(
-                  child: Text('    '),
+                  height: 20,
+                  width: 20,
+                  decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(5),
                   color: Colors.teal,
                 ),
-                SizedBox(width: 10.0,),
+                ),
+                SizedBox(width: 15.0,),
                 Container(
-                  child: Text('    '),
+                  height: 20,
+                  width: 20,
+                  decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(5),
                   color: Colors.green,
                 ),
-                SizedBox(width: 10.0,),
+                ),
               ],
             ),
             SizedBox(height: 5.0,),
@@ -74,37 +105,62 @@ class _ProductState extends State<Product> {
               children: <Widget>[
                 Container(
                   child: Center(child: Text('S',style: TextStyle(color: Colors.white))),
-                  color: Colors.amber,
-                  //padding: EdgeInsets.fromLTRB(6.0, 3,6,3),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
+                    color: Colors.amber,
+                  ),
                   height: 25,
                   width: 33,
                 ),
                 SizedBox(width: 10,),
                 Container(
                   child: Center(child: Text('M',style: TextStyle(color: Colors.white))),
-                  color: Colors.amber,
-                  //padding: EdgeInsets.fromLTRB(6.0, 3,6,3),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
+                    color: Colors.amber,
+                  ),
                   height: 25,
                   width: 33,
                 ),
                 SizedBox(width: 10,),
                 Container(
                   child: Center(child: Text('L',style: TextStyle(color: Colors.white))),
-                  color: Colors.amber,
-                  //padding: EdgeInsets.fromLTRB(6.0, 3,6,3),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
+                    color: Colors.amber,
+                  ),
                   height: 25,
                   width: 33,
                 ),
                 SizedBox(width: 10,),
                 Container(
                   child: Center(child: Text('XL',style: TextStyle(color: Colors.white))),
-                  color: Colors.amber,
-                  //padding: EdgeInsets.fromLTRB(6.0, 3,6,3),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
+                    color: Colors.amber,
+                  ),
                   height: 25,
                   width: 33,
                 ),
                 SizedBox(width: 10,),
               ],
+            ),
+            SizedBox(height: 15,),
+            Center(
+              child: Container(
+                child: Center(
+                  child: Text(
+                    'Add to Cart',
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
+                ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(30),
+                  color: Colors.amber,
+                ),
+                height: 50,
+                width: 300,
+              ),
             ),
           ],
         ),
