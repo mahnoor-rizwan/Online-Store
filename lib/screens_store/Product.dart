@@ -16,6 +16,7 @@ DataTransfer dataTransfer;
   Widget build(BuildContext context) {
   RouteSettings settings = ModalRoute.of(context).settings;
   dataTransfer =settings.arguments;
+  print(dataTransfer.dataType);
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -33,7 +34,7 @@ DataTransfer dataTransfer;
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text('Sweater', style: TextStyle(color: Colors.grey[600], fontSize: 18, fontWeight: FontWeight.w400, )),
+            Text(dataTransfer.dataType, style: TextStyle(color: Colors.grey[600], fontSize: 18, fontWeight: FontWeight.w400, )),
             SizedBox(height: 5.0,),
             Center(
               child: ClipRRect(

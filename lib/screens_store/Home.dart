@@ -27,12 +27,15 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
 
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        elevation: 1.0,
+        elevation: 0.0,
         backgroundColor: Colors.white,
-        title: Icon(Icons.dehaze, color: Colors.amber,size: 30,),
+        title: Icon(Icons.dehaze, color: Colors.amber,size: 40,),
       ),
       body: ListView.builder(
+
+        padding: EdgeInsets.only(left: 50, right: 50),
         scrollDirection: Axis.vertical,
         itemCount: listOfClothes.length,
         itemBuilder: (context, index) {
@@ -41,13 +44,13 @@ class _HomeState extends State<Home> {
               width: 100,
               color: Colors.white,
               child: Padding(
-                padding: const EdgeInsets.only(bottom: 15.0, top: 20),
+                padding: const EdgeInsets.only(bottom: 5, top: 5),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(20),
                   child: Image.asset(
                     listOfClothes[index].imageURL,
-                  height:350,
-                  //fit: BoxFit.contain,
+                  height:400,
+                  fit: BoxFit.cover,
                   ),
                 ),
               ),
