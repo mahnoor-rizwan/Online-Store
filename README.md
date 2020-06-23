@@ -1,6 +1,6 @@
 # onlinestore
 
-A new Flutter application.
+I took a design from dribble and coded it on flutter.
 
 ## Getting Started
 
