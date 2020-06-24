@@ -30,9 +30,7 @@ Design:
 [online fashion store](https://dribbble.com/shots/8138861-Fashion-Online-App-Store) 
 
 ## Completed Design
-![Home Page](Completed/1.png)
-![Product 1](Completed/2.png)
-![Product 2](Completed/3.png)
+| ![Home Page](Completed/1.png) | ![Product 1](Completed/2.png) | ![Product 2](Completed/3.png) |
 
 ## Follow me
 // you can add your social medias if you want
