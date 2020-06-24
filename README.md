@@ -29,5 +29,8 @@ Designer name:
 Design:
 [online fashion store](https://dribbble.com/shots/8138861-Fashion-Online-App-Store) 
 
+## Completed Design
+![Home Page](1.png)
+
 ## Follow me
 // you can add your social medias if you want
