@@ -31,8 +31,8 @@ Design:
 
 ## Completed Design
 ![Home Page](Completed/1.png)
-!(Completed/2.png)
-!(Completed/3.png)
+![Product 1](Completed/2.png)
+![Product 2](Completed/3.png)
 
 ## Follow me
 // you can add your social medias if you want
