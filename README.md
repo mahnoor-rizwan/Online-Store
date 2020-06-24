@@ -1,16 +1,9 @@
 # onlinestore
+This is a practice application. I took the UI design from https://dribbble.com/shots/8138861-Fashion-Online-App-Store and I tried to copy it. 
+I used Dart languaf=ge and flutter to implement this UI. I faced a problem while using ListView. When I scrolled there was a shadow at the end of screen that didn't match the theme of my UI. Then I figured out that you can control it by using the theme under the MaterialApp().   
 
-I took a design from dribble and coded it on flutter.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Theme Data
+ theme: ThemeData(
+      accentColor: Colors.amber[200],
+    ),
