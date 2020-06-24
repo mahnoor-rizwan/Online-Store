@@ -27,7 +27,7 @@ Designer name:
 [Daria](https://dribbble.com/Vostres)
 
 Design:
-["Online Fashion Store App"](ttps://dribbble.com/shots/8138861-Fashion-Online-App-Store)
+[online fashion store](https://dribbble.com/shots/8138861-Fashion-Online-App-Store) 
 
 ## Follow me
 // you can add your social medias if you want
