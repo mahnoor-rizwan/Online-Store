@@ -29,6 +29,8 @@ Designer name:
 Design:
 [online fashion store](https://dribbble.com/shots/8138861-Fashion-Online-App-Store) 
 
+|col 1|col 2|
+
 ## Completed Design
 | ![Home Page](Completed/1.png) | ![Product 1](Completed/2.png) | ![Product 2](Completed/3.png) |
 
