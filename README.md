@@ -6,8 +6,8 @@ I used Dart language and flutter to implement this UI. I faced a problem while u
 
 ## Theme Data
 the code is: 
-'''
+```
 theme: ThemeData(
 accentColor: Colors.amber[200],
 ),
-'''
+```
