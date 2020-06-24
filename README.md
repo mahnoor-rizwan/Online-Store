@@ -37,4 +37,4 @@ Design:
 
 ## Follow me
 Linked in: 
-[Linked in](https://www.linkedin.com/in/mahnoor-rizwan-b7657818b/) 
+[Mahnoor Rizwan](https://www.linkedin.com/in/mahnoor-rizwan-b7657818b/) 
