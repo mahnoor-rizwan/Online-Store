@@ -48,7 +48,7 @@ DataTransfer dataTransfer;
               ),
             ),
             SizedBox(height: 10.0,),
-            Text('${dataTransfer.dataPrice}', style: TextStyle(color: Colors.grey[500], fontSize: 15)),
+            Text('${dataTransfer.dataPrice}', style: TextStyle(color: Colors.grey[700], fontSize: 15, letterSpacing: 2.0)),
             SizedBox(height: 5.0,),
             Text('colors', style: TextStyle(color: Colors.grey[500], fontSize: 15)),
             SizedBox(height: 5.0,),

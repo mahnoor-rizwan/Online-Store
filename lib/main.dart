@@ -13,7 +13,6 @@ void main() {
       //'/':(context)=> Loading(),
       '/home':(context)=> Home(),
       '/product':(context)=> Product(),
-
     },
   ));
 }
