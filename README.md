@@ -1,16 +1,36 @@
-# onlinestore
+# Online store (Mobile Application)
 
-I took a design from dribble and coded it on flutter.
+In this pratice project I implemented this 
+[online fashion store](https://dribbble.com/shots/8138861-Fashion-Online-App-Store) *concept design* into a *static mobile application*.
 
-## Getting Started
+## Technology and platform
+Framework: flutter
 
-This project is a starting point for a Flutter application.
+Platroms: Android and ios
+1. Android -> Developed and tested
+2. ios -> deeloped (not tested yet)
 
-A few resources to get you started if this is your first Flutter project:
+## Challange in implementation
+I faced a problem while using ListView. When I scrolled there was a shadow at the end of screen that didn't match the theme of concept design. Then I figured out that you can control it by using the theme under the MaterialApp().
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Theme Data
+the code is: 
+```
+theme: ThemeData(
+accentColor: Colors.amber[200],
+),
+```
+
+## Reference to concept design
+Designer name: 
+[Daria](https://dribbble.com/Vostres)
+
+Design:
+[online fashion store](https://dribbble.com/shots/8138861-Fashion-Online-App-Store) 
+
+## Completed Design
+![Home Page](Completed/1.png)
+
+## Follow me
+// you can add your social medias if you want
